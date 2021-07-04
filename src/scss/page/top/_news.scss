@@ -1,0 +1,118 @@
+.news {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__head {
+    text-align: center;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 32px;
+    margin-top: 20px;
+  }
+  &__nav {
+    text-align: center;
+    margin-top: 46px;
+    margin-bottom: 49px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    &-item {
+      color: black;
+      margin-right: 21px;
+      margin-left: 21px;
+      &.js-active {
+        display: inline-block;
+        border-bottom: 1px solid;
+      }
+    }
+  }
+  &__wrapper {
+    display: none;
+    &.js-show {
+      display: block;
+    }
+  }
+  &__inner {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  &__item {
+    height: 130px;
+    width: 570px;
+    display: flex;
+    background-color: #f6f6f6;
+    color: black;
+  }
+  &__img {
+    width: 103px;
+    height: 100px;
+    margin: 15px 30px 15px 10px;
+  }
+  &__link {
+    text-decoration: none;
+    margin-top: 20px;
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+  &__time {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 32px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    &__inner {
+      justify-content: center;
+    }
+    &__link {
+      &:nth-child(2) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__inner {
+      justify-content: center;
+    }
+    &__item {
+      width: 90vw;
+      height: 90px;
+    }
+
+    &__img {
+      width: 62px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+    &__logo {
+      width: 30px;
+      height: 30px;
+    }
+    &__title {
+      font-size: 25px;
+    }
+    &__link {
+      &:nth-child(2) {
+        margin-top: 20px;
+      }
+    }
+
+    &__text {
+      font-size: 8px;
+      line-height: 2em;
+    }
+
+    &__time {
+      font-size: 8px;
+    }
+  }
+}

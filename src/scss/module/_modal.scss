@@ -1,0 +1,133 @@
+.modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+  &__bg {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+  }
+
+  &-form {
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 600px;
+    color: #000;
+    flex-direction: column;
+    &__title {
+      font-size: 20px;
+      line-height: 34px;
+      text-align: center;
+    }
+    &__line {
+      width: 80%;
+      margin: 29.5px auto 33.5px auto;
+      border: 1px solid #e7e7e7;
+    }
+    &__label {
+      font-size: 16px;
+      line-height: 27px;
+      display: block;
+    }
+    &__select {
+      margin: 14px 0;
+      height: 32px;
+      width: 80%;
+      box-sizing: border-box;
+      cursor: pointer;
+      border: 1px solid #e7e7e7;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      color: #797878;
+      text-indent: 1em;
+      padding-right: 5px;
+      background-color: #fff;
+    }
+    &__input {
+      width: 80%;
+      height: 32px;
+      margin: 14px 0;
+      box-sizing: border-box;
+      border: 1px solid #e7e7e7;
+      color: #797878;
+      text-indent: 1em;
+    }
+
+    &__btn {
+      margin: 64px auto 90px auto;
+      text-align: center;
+      border: 1px solid #707070;
+      width: 198px;
+      height: 42px;
+      text-align: center;
+      background-color: #fff;
+      display: block;
+    }
+    &__submit {
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+  &-no_scroll {
+    overflow: hidden;
+  }
+  @media screen and (max-width: 767px) {
+    &__bg {
+      width: 100%;
+    }
+    &-form {
+      width: 75%;
+
+      top: 40%;
+      height: 70%;
+      padding: 20px;
+      &__title {
+        font-size: 18px;
+      }
+      &__line {
+        margin-top: 15px;
+        margin-bottom: 18px;
+      }
+      &__select {
+        font-size: 10px;
+        height: 25px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+      }
+      &__btn {
+        width: 150px;
+        height: 38px;
+      }
+      &__submit {
+        font-size: 10px;
+      }
+
+      &__label {
+        font-size: 8px;
+      }
+
+      &__btn {
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+
+      &__input {
+        margin: 7px 0;
+        font-size: 10px;
+        height: 25px;
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@ const crypto = require("crypto");
 const hash = crypto.randomBytes(8).toString("hex");
 const replace = require("gulp-replace");
 
-sass.compiler = require("sass"); // dart sassを使う
+sass.compiler = require("sass");
 
 const compileSass = (done) => {
   const postcssPlugins = [
@@ -42,11 +42,9 @@ const compileSass = (done) => {
 
 const buildServer = (done) => {
   browserSync.init({
-    port: 8080, // 静的サイト
+    port: 8080,
     server: { baseDir: "./dist" },
-    // 動的サイト
-    // files: ["./**/*.php"],
-    // proxy: "http://localsite.local/",
+
     open: true,
     watchOptions: {
       debounceDelay: 1000,

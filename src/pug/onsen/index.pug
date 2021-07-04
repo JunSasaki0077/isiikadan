@@ -1,0 +1,50 @@
+extends ../includes/_layout.pug
+block titles
+  - var title = '温泉 | 温海温泉旅館【公式サイト】'
+block content
+
+  include ../includes/_content-header.pug
+  section.content__fv
+    img.content__fv-img(src="../images/onsen-header.png", alt="お部屋１")
+    h2.content__fv-title 温泉
+  include ../includes/_modal.pug
+
+  section.content__main
+    nav.breadcrumb
+      ol.breadcrumb__list(itemscope,itemtype="https://schema.org/BreadcrumbList")
+        li.breadcrumb__item(itemprop="itemListElement", itemscope,itemtype="https://schema.org/ListItem")
+          a.breadcrumb__link(itemprop="item" href="../index.html")
+            span(itemprop="name") ホーム
+          meta(itemprop="position",content="1")
+        li.breadcrumb__item(itemprop="itemListElement",itemscope,itemtype="https://schema.org/ListItem")
+          span(itemprop="name") 温泉
+          meta(itemprop="position",content="2")
+    .content__title
+      p 心も身体も癒やす癒やす汐の温泉。<br/>湯あたりしにくく、赤ちゃんから年配までの方までならどなたでもゆっくりと安心して入っていただけます。<br>柔らかく優しい湯にじっくりと浸かれば、心身共にリラックスできます。
+    .content__box
+      img.content__img(src="../images/onsen01.jpg" alt="温泉０１" )
+      .content__text-box
+        h3.content__text-title 貸切露天風呂「雲居の湯」
+        p.content__text 弱酸性の湯質が優しく肌を包み込むような心地よさ<br/>最上階の露天風呂「雲居の湯」では、湯冷めしにくい食塩泉を<br/>熱海の町並みを遠方に望みながら・・・
+    .content__box.content__box--reverse
+      img.content__img.content__img--reverse(src="../images/onsen02.jpg" alt="温泉０２" )
+      .content__text-box.content__text-box--reverse
+        h3.content__text-title 美肌を促す乳白色の硫黄泉を
+        p.content__text まりっけなしの白いにごり湯。。鳥海山から引いたから酸性のつよう硫黄塩泉を、<br/>たっぷりと掛け流しています。<br/>四季の移り変わりを、天然温泉の湯に浸りながら味わってください。
+
+  section.horizontal-table
+    h3.horizontal-table__title 温泉の効能
+    table.horizontal-table__inner
+      tbody.horizontal-table__body
+        tr.horizontal-table__row
+          th.horizontal-table__header 効能
+          td.horizontal-table__text 神経痛・慢性関節リューマチ・腰痛・冷え性・慢性婦人病・うちみなど
+        tr.horizontal-table__row
+          th.horizontal-table__header 泉質
+          td.horizontal-table__text ナトリウム・カルシウム-塩化物泉
+        tr.horizontal-table__row
+          th.horizontal-table__header 飲用効果
+          td.horizontal-table__text 弱塩化物泉は肌にやわらかなため、高齢者や病後の回復期によく、飲用すれば慢性便秘や慢性消化<br/>器病病に効果があります。
+
+
+  include ../includes/_footer.pug

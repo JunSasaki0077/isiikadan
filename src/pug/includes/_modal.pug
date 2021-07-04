@@ -1,0 +1,25 @@
+.modal.js-modal
+  .modal__bg.js-modal-close
+  .modal-form
+    .modal-form__inner
+      h2.modal-form__title 宿泊予約
+        hr.modal-form__line
+      ul.modal-form__list
+        li
+          label.modal-form__label(for="name") お名前
+          input.modal-form__input(type="text" name="name" placeholder="例：石井翔吾")
+        li
+          label.modal-form__label(for="mail") メールアドレス
+          input.modal-form__input(type="text" name="mail" placeholder="例：Example@example.com")
+        li
+          label.modal-form__label(for="plan") ご希望プラン<span class="form__label-sm">(空いているプランのみ表示されます)</span>
+          select.modal-form__select(name="plan")
+            option(value="" hidden) プランを選択してください
+            option(value="plan1") ①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+            option(value="plan2") ② 平日に優雅に楽しむ、特別宿泊プラン
+            option(value="plan3") ③ 絶景貸切露天と個室会席を満喫できるファミリープラン
+        li
+          label.modal-form__label(for="time") 日時選択
+          input.flatpickr.modal-form__input(type="text" readonly='readonly' placeholder="日時を選択してください")
+      button.modal-form__btn
+        a.modal-form__submit(href="") 送信する

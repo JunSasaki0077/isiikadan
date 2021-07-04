@@ -1,0 +1,32 @@
+.breadcrumb {
+  margin-bottom: 98px;
+  &__item {
+    display: inline;
+    &::after {
+      content: ">";
+      padding: 0 0.2em;
+      color: #555;
+    }
+    &:last-child::after {
+      content: "";
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    margin-bottom: 58px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    &__item {
+      font-size: 8px;
+    }
+  }
+}

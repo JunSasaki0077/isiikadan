@@ -1,0 +1,38 @@
+.top {
+  color: #fff;
+  position: relative;
+  &__title {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    writing-mode: vertical-rl;
+    font: 800 34px/42px YuMincho;
+    line-height: 3;
+    z-index: 10;
+    letter-spacing: 0.2em;
+  }
+
+  &__img {
+    height: 1079px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    &__img {
+      height: 800px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__title {
+      top: 35%;
+      left: 35%;
+      font-size: 24px;
+    }
+
+    &__img {
+      height: 550px;
+    }
+  }
+}

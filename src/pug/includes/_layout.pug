@@ -1,0 +1,15 @@
+doctype html
+
+block titles
+  - var title = '石井花壇'
+
+html(lang="ja")
+  head
+    include ./head/_meta
+    title #{title}
+    include  ./head/_favicon
+    include ./head/_stylesheet
+
+  body
+    block content
+

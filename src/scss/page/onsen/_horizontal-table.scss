@@ -1,0 +1,54 @@
+.horizontal-table {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 96.5px;
+  &__title {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 95.5px;
+    margin-bottom: 51.5px;
+  }
+  &__inner {
+    margin: 0 auto;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 74px;
+  }
+  &__header {
+    width: 20%;
+    text-align: left;
+    border-top: 1px solid #e7e7e7;
+    vertical-align: middle;
+    font-size: 15px;
+  }
+  &__text {
+    padding: 15px;
+    font-size: 15px;
+
+    border-top: 1px solid #e7e7e7;
+  }
+  &__row {
+    :nth-child(0) {
+      border-top-width: 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    &__title {
+      font-size: 18px;
+      margin-top: 40px;
+    }
+
+    &__inner {
+      margin-bottom: 50px;
+    }
+    &__header {
+      font-size: 8px;
+    }
+    &__text {
+      font-size: 8px;
+    }
+  }
+}

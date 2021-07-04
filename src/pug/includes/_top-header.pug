@@ -1,0 +1,31 @@
+
+header.top-header
+  .top-header__inner
+    h1.top-header__title
+      a.top-header__link(href="./index.html")
+        img.top-header__logo(src="../images/top-header-logo.png" alt="ヘッダーロゴ")
+        img.js-top-header__logo(src="../images/sub-header-logo.png", alt="")
+    nav.gnav
+      ul.gnav__list
+        li
+          a.gnav__link(href="./cook/index.html") お料理
+        li
+          a.gnav__link(href="./room/index.html") お部屋
+        li
+          a.gnav__link(href="./onsen/index.html") 温泉
+    button.header__btn.js-modal-open
+      img.header__btn-img(src="../images/calender.png", alt="カレンダー")
+      a.header__btn-link(href="#") 宿泊予約
+    .js-gnav
+      nav.js-gnav__wrapper
+        ul.js-gnav__list
+          li
+            a.js-gnav__link(href="./cook/index.html") お料理
+          li
+            a.js-gnav__link(href="./room/index.html") お部屋
+          li
+            a.js-gnav__link(href="./onsen/index.html") 温泉
+    div.burger-btn
+      span.bar.bar_top
+      span.bar.bar_mid
+      span.bar.bar_bottom

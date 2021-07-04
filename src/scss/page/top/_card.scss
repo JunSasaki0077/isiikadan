@@ -1,0 +1,102 @@
+.card {
+  background-image: url(../images/bg02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 144px;
+  &__head {
+    text-align: center;
+    &-title {
+      font-size: 36px;
+      line-height: 32px;
+      margin-top: 20px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-top: 66px;
+  }
+  &__img-wrapper {
+    flex: 0 1 27.58333%;
+  }
+  &__img {
+    width: 331px;
+    height: 209px;
+  }
+  &__body {
+    padding: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    font-size: 1.125rem;
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  &__text {
+    margin-top: 36px;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    &__wrapper {
+      display: block;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &__body {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    &__title {
+      margin-top: 0;
+    }
+
+    &__img {
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+    &__head-title {
+      font-size: 25px;
+      padding-bottom: 40px;
+    }
+    &__wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+    &__logo {
+      width: 30px;
+      height: 30px;
+    }
+    &__img {
+      width: 90vw;
+      height: 253.125px;
+    }
+
+    &__body {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    &__text {
+      font-size: 8px;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+.content {
+  &__fv {
+    position: relative;
+    margin-bottom: 36px;
+    &-img {
+      width: 100%;
+      height: 500px;
+    }
+    &-title {
+      position: absolute;
+      color: #fff;
+      top: 46%;
+      left: 46%;
+      font-size: 34px;
+      line-height: 42px;
+    }
+  }
+  &__main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: center;
+    line-height: 32px;
+    font-size: 16px;
+    margin-bottom: 135px;
+  }
+  &__box {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    &--reverse {
+      flex-flow: row-reverse;
+    }
+  }
+  &__img {
+    width: 525px;
+    height: 300px;
+    position: absolute;
+    top: -10%;
+    z-index: 1;
+    &--reverse {
+      margin-left: auto;
+    }
+  }
+
+  &__text-box {
+    background-image: url("../images/bg.png");
+    width: 813px;
+    height: 381px;
+    margin-left: auto;
+    margin-bottom: 141px;
+    padding: 5% 0 0 25%;
+    box-sizing: border-box;
+    &--reverse {
+      margin-right: auto;
+      margin-left: 0;
+      padding-left: 5%;
+    }
+  }
+  &__text-title {
+    font-size: 24px;
+    margin-bottom: 52px;
+  }
+  &__text {
+    margin-bottom: 52px;
+    line-height: 2em;
+    font-size: 14px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    &__img {
+      top: -25%;
+      width: 100%;
+      height: 350px;
+      margin-bottom: 100px;
+    }
+    &__title {
+      margin-bottom: 280px;
+    }
+
+    &__text-box {
+      padding-top: 20%;
+      text-align: center;
+      padding-left: 0;
+      margin-top: 100px;
+      margin-bottom: 200px;
+    }
+
+    &__text-title {
+      margin-bottom: 28px;
+    }
+
+    &__text {
+      margin-bottom: 18px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    &__fv {
+      &-img {
+        height: 281.25px;
+      }
+      &-title {
+        font-size: 20px;
+        top: 50%;
+        left: 48%;
+      }
+    }
+    &__main {
+      width: 90%;
+    }
+    &__title {
+      line-height: 16px;
+      font-size: 8px;
+    }
+
+    &__box {
+      display: block;
+    }
+
+    &__img {
+      width: 90vw;
+      height: 253.125px;
+      position: static;
+    }
+
+    &__text {
+      font-size: 8px;
+      margin-bottom: 18px;
+      &-title {
+        font-size: 18px;
+      }
+    }
+    &__text-box {
+      text-align: center;
+      padding-left: 0;
+      margin-top: 0px;
+      margin-bottom: 60px;
+      width: 90vw;
+      height: 250px;
+    }
+  }
+}
