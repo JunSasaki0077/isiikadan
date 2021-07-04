@@ -13,6 +13,7 @@
       left: 46%;
       font-size: 34px;
       line-height: 42px;
+      font-weight: 800;
     }
   }
   &__main {
@@ -62,14 +63,19 @@
   }
   &__text-title {
     font-size: 24px;
+    line-height: 32px;
     margin-bottom: 52px;
   }
   &__text {
     margin-bottom: 52px;
     line-height: 2em;
-    font-size: 14px;
+    font-size: 16px;
     &:last-child {
       margin-bottom: 0;
+    }
+    &--small {
+      font-size: 14px;
+      line-height: 21px;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1024px) {

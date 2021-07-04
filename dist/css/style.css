@@ -25,6 +25,7 @@ body {
 }
 .breadcrumb__item {
   display: inline;
+  line-height: 32px;
 }
 .breadcrumb__item::after {
   color: #555;
@@ -36,6 +37,7 @@ body {
 }
 .breadcrumb__link {
   color: #000;
+  line-height: 32px;
   text-decoration: none;
 }
 .breadcrumb__link:hover {
@@ -149,6 +151,7 @@ body {
 .content__fv-title {
   color: #fff;
   font-size: 34px;
+  font-weight: 800;
   left: 46%;
   line-height: 42px;
   position: absolute;
@@ -200,15 +203,20 @@ body {
 }
 .content__text-title {
   font-size: 24px;
+  line-height: 32px;
   margin-bottom: 52px;
 }
 .content__text {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2em;
   margin-bottom: 52px;
 }
 .content__text:last-child {
   margin-bottom: 0;
+}
+.content__text--small {
+  font-size: 14px;
+  line-height: 21px;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .content__img {
@@ -353,19 +361,19 @@ body {
 }
 
 .gnav {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .gnav__list {
   display: flex;
 }
 .gnav__item {
-  font: normal normal 800 16px/42px YuMincho;
-  font-size: 16px;
   line-height: 42px;
   padding-right: 30px;
 }
 .gnav__link {
   color: #fff;
+  font-size: 16px;
+  font-weight: 800;
   padding-right: 30px;
   text-decoration: none;
 }
@@ -628,7 +636,7 @@ body {
   left: 20px;
   opacity: 0;
   position: absolute;
-  top: 25px;
+  top: 20px;
   z-index: 2;
 }
 .js-top-header .gnav__link {
@@ -656,6 +664,7 @@ body {
 }
 .horizontal-table__title {
   font-size: 26px;
+  line-height: 32px;
   margin-bottom: 51.5px;
   margin-top: 95.5px;
   text-align: center;
@@ -668,6 +677,7 @@ body {
 .horizontal-table__header {
   border-top: 1px solid #e7e7e7;
   font-size: 15px;
+  line-height: 32px;
   text-align: left;
   vertical-align: middle;
   width: 20%;
@@ -675,6 +685,7 @@ body {
 .horizontal-table__text {
   border-top: 1px solid #e7e7e7;
   font-size: 15px;
+  line-height: 32px;
   padding: 15px;
 }
 .horizontal-table__row :nth-child(0) {

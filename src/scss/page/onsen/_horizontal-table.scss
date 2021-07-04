@@ -6,6 +6,7 @@
   margin-bottom: 96.5px;
   &__title {
     font-size: 26px;
+    line-height: 32px;
     text-align: center;
     margin-top: 95.5px;
     margin-bottom: 51.5px;
@@ -21,11 +22,12 @@
     border-top: 1px solid #e7e7e7;
     vertical-align: middle;
     font-size: 15px;
+    line-height: 32px;
   }
   &__text {
     padding: 15px;
     font-size: 15px;
-
+    line-height: 32px;
     border-top: 1px solid #e7e7e7;
   }
   &__row {

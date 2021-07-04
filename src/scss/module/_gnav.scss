@@ -1,18 +1,18 @@
 .gnav {
-  margin-top: 20px;
+  margin-top: 15px;
   &__list {
     display: flex;
   }
   &__item {
     padding-right: 30px;
-    font-size: 16px;
     line-height: 42px;
-    font: normal normal 800 16px/42px YuMincho;
   }
   &__link {
     color: #fff;
     text-decoration: none;
     padding-right: 30px;
+    font-weight: 800;
+    font-size: 16px;
     &-black {
       color: #000;
     }

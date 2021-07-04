@@ -1,6 +1,6 @@
 extends ../includes/_layout.pug
 block titles
-  - var title = 'お料理 | 温海温泉旅館【公式サイト】'
+  - var title = 'お料理 - 石井花壇 | 温海温泉旅館【公式サイト】'
 block content
 
   include ../includes/_content-header.pug
@@ -19,23 +19,23 @@ block content
         li.breadcrumb__item(itemprop="itemListElement",itemscope,itemtype="https://schema.org/ListItem")
           span(itemprop="name") お料理
           meta(itemprop="position",content="2")
-    .content__title
+    .content__title(data-aos="fade-up")
       p 地元熱海ぼ市場で仕入れた食材のみを使った食材をふんだんに使い、<br/>大正の技が光る「熱海料理」<br/>四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。
     .content__box
-      img.content__img(src="../images/menu01.jpg" alt="メニュー０１")
-      .content__text-box
+      img.content__img(src="../images/menu01.jpg" alt="メニュー０１" data-aos="fade-right")
+      .content__text-box(data-aos="fade-left")
         h3.content__text-title 地元食材にこだわった会席料理
         p.content__text みずみずしくほのかに甘い野菜、新鮮で味に深みがある、魚介類、肉類。<br/>旬の食材をそのままに生かす、経験に裏打ちされた確かな技。<br/>四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。
 
     .content__box.content__box--reverse
-      img.content__img.content__img--reverse(src="../images/menu02.jpg" alt="メニュー０２")
-      .content__text-box.content__text-box--reverse
+      img.content__img.content__img--reverse(src="../images/menu02.jpg" alt="メニュー０２" data-aos="fade-left")
+      .content__text-box.content__text-box--reverse(data-aos="fade-right")
         h3.content__text-title 熱海の漁港で目利きの品を
         p.content__text 石井花壇でお出しする料理はすべて料理長である大将の目利きで、<br/>熱海の魚市場でその日のうちに仕入れたものを使用しております。<br/>日本海の宝玉を充分にお楽しみください。
 
     .content__box
-      img.content__img(src="../images/menu03.jpg" alt="メニュー０３")
-      .content__text-box
+      img.content__img(src="../images/menu03.jpg" alt="メニュー０３" data-aos="fade-right")
+      .content__text-box(data-aos="fade-left")
         h3.content__text-title 食材が一流、職人も一流
         p.content__text 石井花壇の料理人は料亭で20年経験を積んだものばかり。<br/>そのときの最も旬な食材を、最高の調理でお届けします。 <br/>また、お料理への細かいご要望にもお答えできますので、<br/>お気軽のお申し付けください。
 
