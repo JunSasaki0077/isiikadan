@@ -21,6 +21,12 @@ $(function () {
     $(".js-modal").fadeOut();
     return false;
   });
+  $(".modal-form__close").on("click", function () {
+    $("js-modal").attr("style", "");
+    $("body").removeClass("modal-no_scroll");
+    $(".js-modal").fadeOut();
+    return false;
+  });
 });
 
 flatpickr(".flatpickr", {
@@ -35,6 +41,7 @@ AOS.init({
   delay: 100,
   once: false,
   anchorPlacement: "bottom-center",
+  disable: "phone",
 });
 
 window.addEventListener("scroll", function () {

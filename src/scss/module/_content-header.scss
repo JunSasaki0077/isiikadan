@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    height: 80px;
   }
   &__logo {
     padding-right: 120px;
@@ -24,6 +25,7 @@
   }
 
   @media screen and (max-width: 767px) {
+    position: fixed;
     &__logo {
       width: 115px;
       height: 30px;

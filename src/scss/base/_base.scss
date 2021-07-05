@@ -6,3 +6,9 @@ body {
     “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”,
     “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
 }
+
+@media screen and (max-width: 767px) {
+  .sp_br {
+    display: none;
+  }
+}

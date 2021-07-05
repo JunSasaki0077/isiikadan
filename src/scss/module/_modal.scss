@@ -15,7 +15,8 @@
   &-form {
     background: #fff;
     left: 50%;
-    padding: 40px;
+    padding: 29px 60.5px 0 60.5px;
+    padding-top: 29px;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -23,6 +24,9 @@
     height: 600px;
     color: #000;
     flex-direction: column;
+    &__inner {
+      position: relative;
+    }
     &__title {
       font-size: 20px;
       line-height: 34px;
@@ -41,7 +45,7 @@
     &__select {
       margin: 14px 0;
       height: 32px;
-      width: 80%;
+      width: 90%;
       box-sizing: border-box;
       cursor: pointer;
       border: 1px solid #e7e7e7;
@@ -54,7 +58,7 @@
       background-color: #fff;
     }
     &__input {
-      width: 80%;
+      width: 90%;
       height: 32px;
       margin: 14px 0;
       box-sizing: border-box;
@@ -64,7 +68,7 @@
     }
 
     &__btn {
-      margin: 64px auto 90px auto;
+      margin: 34px auto;
       text-align: center;
       border: 1px solid #707070;
       width: 198px;
@@ -78,6 +82,13 @@
       color: #000;
       font-size: 16px;
       line-height: 27px;
+      font-family: Yu Mincyo;
+    }
+    &__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
     }
   }
   &-no_scroll {
@@ -115,11 +126,11 @@
       }
 
       &__label {
-        font-size: 8px;
+        font-size: 12px;
       }
 
       &__btn {
-        margin-top: 20px;
+        margin-top: 40px;
         margin-bottom: 0;
       }
 
