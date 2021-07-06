@@ -5,6 +5,7 @@
   &__block {
     display: flex;
     margin-bottom: 122px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -26,6 +27,7 @@
     height: auto;
   }
   &__body {
+    margin-left: 7.777%;
     &:last-child {
       margin-bottom: 0;
     }
@@ -70,6 +72,9 @@
       margin: 0 auto;
       padding-bottom: 60px;
       width: 90%;
+    }
+    &__body {
+      margin-left: 0;
     }
     &__img {
       width: 100%;
